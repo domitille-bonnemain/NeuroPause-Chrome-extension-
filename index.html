@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pause Extension</title>
+</head>
+<body>
+    <h1>Prenez un café ☕</h1>
+    <div class="horloge">
+        <span id="timer">00:00</span> 
+    <br />
+    </div>
+    
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="reset()">Reset</button>
+    <br />
+    
+    <div class="timeChoice">
+        <div class="screenTime">
+            <span>Screen Minutes</span><br />
+           <button id="downS">&lt;</button>
+           <h1 id="timeS"></h1> 
+           <button id="upS">&gt;</button> 
+        </div>
+        <div class="illustration">
+            <img src="https://i.pinimg.com/564x/1e/6a/8f/1e6a8fbcc777b4113524f9861922b0d1.jpg" alt="coffee">
+        </div>
+        <div class="breakTime">
+            <span>Break Minutes</span><br />
+            <button id="downB">&lt;</button>
+           <h1 id="timeB"></h1> 
+           <button id="upB">&gt;</button> 
+        </div>
+    </div>
+
+    <script src="timer.js"></script>
+    <script src="button.js"></script>
+</body>
+</html>
