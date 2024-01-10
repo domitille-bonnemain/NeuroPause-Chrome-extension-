@@ -1,24 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    width: 400px;
 }
 
-.timeChoice{
+body{
     width: 100%;
     height: 100vh;
     background: linear-gradient(to right, #485563, #29323c);
+    margin: 15px;
+    color: #ffeac7;
+}
+
+
+.timeChoice{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.span{
+    padding-top: 10px;
+}
+
+#timeS, #timeB{
+    padding: 15px;
+    justify-content: center;
+}
+
+
+.screenTime{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.illustration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img{
+    width:50%;
+    height:auto;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.breakTime{
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
 .btn{
-    padding: 10px 60px;
-    background: #fff;
+    padding: 5px 30px;
+    background: #5fc0f43f;
+    color: #fff;
     border: 0;
     outline: none;
     cursor: pointer;
@@ -32,53 +77,7 @@
     transform: scale(0.95);
 }
 
-.popup{
-    width: 400px;
-    background: #fff;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    text-align: center;
-    padding: 0 30px 60px;
-    color: #333;
-    visibility: hidden;
-    transition: all 0.4s ease-in-out;
-}
-
-.open-popup{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.popup img{
-    width: 100px;
-    margin-top: -50px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.popup h2{
-    font-size: 38px;
-    font-weight: 500;
-    margin: 30px 0 10px;
-}
-
-.popup button{
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px 0;
-    background-color: #e02189;
+#startBtn{
+    background-color: #92d9ffad;;
     color: #fff;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
