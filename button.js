@@ -4,7 +4,7 @@ let timeS = document.getElementById("timeS");
 let timeB = document.getElementById("timeB");
 
 //fonction qui affiche un chiffre de départ 
-timeS.innerHTML = "1";
+timeS.innerHTML = "10";
 timeB.innerHTML = "10";
 
 //fonction qui augmente les minutes pour le temps écran
