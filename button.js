@@ -1,6 +1,7 @@
 
 //voir le temps en minutes
 let timeS = document.getElementById("timeS");
+
 let timeB = document.getElementById("timeB");
 
 //fonction qui affiche un chiffre de départ 
