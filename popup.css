@@ -3,13 +3,13 @@
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
-    width: 400px;
-    filter: brightness(0.8);
 }
 
 body{
-    width: 100%;
-    height: 100vh;
+    min-width: 400px; /* your desired width */
+  max-width: 100%;
+  position: relative;
+  vertical-align:middle;
     background: linear-gradient(to right, #485563, #29323c);
     margin: 15px;
     color: #ffeac7;
