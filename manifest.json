@@ -1,0 +1,29 @@
+{
+    "_comment": "Clés obligatoires: 'manifest_version', 'name' & 'version':",
+  
+    "manifest_version": 1,
+    "name": "DTZ",
+    "description": "Screen time break extension for autistic people",
+    "version": "1.0",
+    "authors": "Domitille Bonnemain, Zoé Lecaille, Tijana Laporte Mitrovic",
+  
+    "_comment1": "Boutons qui s'ajouttent à la barre d'outils du navigateur",
+  
+    "action": {
+      "default_popup": "DTZ.html",
+      "default_icon": "DTZ_extension.png"
+    },
+    "_comment2": "Déclarer le script de contenu",
+    
+    "content_scripts": [
+      {
+        "js": [
+          "scripts/content.js"
+        ],
+        "matches": [
+          "https://developer.chrome.com/docs/extensions/*",
+          "https://developer.chrome.com/docs/webstore/*"
+        ]
+      }
+    ]
+  }
