@@ -4,6 +4,7 @@
     font-family: 'Poppins', sans-serif;
     margin: 0px;
     width: 400px;
+    filter: brightness(0.8);
 }
 
 body{
