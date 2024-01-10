@@ -5,35 +5,44 @@
 </head>
 <body>
     <h1>Prenez un café ☕</h1>
+
+    <!--div timer - temps qui defile-->
     <div class="horloge">
         <span id="timer">00:00</span> 
     <br />
     </div>
     
+    <!--Boutons start, stop et reset-->
     <button onclick="start()">Start</button>
     <button onclick="stop()">Stop</button>
     <button onclick="reset()">Reset</button>
     <br />
-    
+
+    <!--Choix du timer Ecran && timer Break + illustration-->
     <div class="timeChoice">
         <div class="screenTime">
-            <span>Screen Minutes</span><br />
+            <span>Screen Minutes</span><br/>
+            <!--Regler le timer Ecran-->
            <button id="downS">&lt;</button>
            <h1 id="timeS"></h1> 
            <button id="upS">&gt;</button> 
         </div>
+        <!--Illustration pour animation?-->
         <div class="illustration">
             <img src="https://i.pinimg.com/564x/1e/6a/8f/1e6a8fbcc777b4113524f9861922b0d1.jpg" alt="coffee">
         </div>
         <div class="breakTime">
-            <span>Break Minutes</span><br />
+            <span>Break Minutes</span><br/>
+            <!--Regler le timer Break-->
             <button id="downB">&lt;</button>
            <h1 id="timeB"></h1> 
            <button id="upB">&gt;</button> 
         </div>
     </div>
 
+    <!--Script du timer qui défile-->
     <script src="timer.js"></script>
+    <!--Script des boutons pour choisir le temps des timers-->
     <script src="button.js"></script>
 </body>
 </html>
