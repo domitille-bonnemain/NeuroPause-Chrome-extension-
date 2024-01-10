@@ -5,16 +5,16 @@
     margin: 0px;
 }
 
-body{
-    min-width: 400px; /* your desired width */
-  max-width: 100%;
-  position: relative;
-  vertical-align:middle;
+body {
+    min-width: 400px;
+    /* your desired width */
+    max-width: 100%;
+    position: relative;
+    vertical-align: middle;
     background: linear-gradient(to right, #485563, #29323c);
     margin: 15px;
     color: #ffeac7;
 }
-
 
 .timeChoice{
     display: flex;
