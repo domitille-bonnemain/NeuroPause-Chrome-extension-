@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Pause Extension</title>
+    <link rel="stylesheet" href="popup.css">
 </head>
 <body>
     <h1>Prenez un café ☕</h1>
@@ -13,9 +14,9 @@
     </div>
     
     <!--Boutons start, stop et reset-->
-    <button onclick="start()">Start</button>
-    <button onclick="stop()">Stop</button>
-    <button onclick="reset()">Reset</button>
+    <button onclick="start()" class="btn">Start</button>
+    <button onclick="stop()" class="btn">Stop</button>
+    <button onclick="reset()" class="btn">Reset</button>
     <br />
 
     <!--Choix du timer Ecran && timer Break + illustration-->
@@ -23,9 +24,9 @@
         <div class="screenTime">
             <span>Screen Minutes</span><br/>
             <!--Regler le timer Ecran-->
-           <button id="downS">&lt;</button>
+           <button id="downS" class="btn">&lt;</button>
            <h1 id="timeS"></h1> 
-           <button id="upS">&gt;</button> 
+           <button id="upS" class="btn">&gt;</button> 
         </div>
         <!--Illustration pour animation?-->
         <div class="illustration">
@@ -34,9 +35,9 @@
         <div class="breakTime">
             <span>Break Minutes</span><br/>
             <!--Regler le timer Break-->
-            <button id="downB">&lt;</button>
+            <button id="downB" class="btn">&lt;</button>
            <h1 id="timeB"></h1> 
-           <button id="upB">&gt;</button> 
+           <button id="upB" class="btn">&gt;</button> 
         </div>
     </div>
 

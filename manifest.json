@@ -10,7 +10,7 @@
     "_comment1": "Boutons qui s'ajouttent à la barre d'outils du navigateur",
   
     "action": {
-      "default_popup": "DTZ.html",
+      "default_popup": "index.html",
       "default_icon": "DTZ_extension.png"
     },
     "_comment2": "Déclarer le script de contenu",
