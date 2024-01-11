@@ -12,6 +12,22 @@
     "action": {
       "default_popup": "index.html"
     },
-    "_comment2": "Déclarer le script de contenu"
+    "_comment2": "Déclarer le script de contenu",
+
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": [
+          "js/app.js"
+        ]
+      }  
+    ],
+
+    "_comment3": "Page d'arrière plan",
+
+    "background" : {
+      "scripts" : ["js/background.js"],
+      "persistent": false
+    }
     
 }
