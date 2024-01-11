@@ -48,6 +48,8 @@ startBtn.addEventListener("click", start);
 const stopBtn = document.getElementById("stop");
 const stop = () => {
     clearInterval(intervalX);
+// Reset la couleur de base en cliquant sur stop
+    resetBrightness();
     console.log("stop");
 };
 
