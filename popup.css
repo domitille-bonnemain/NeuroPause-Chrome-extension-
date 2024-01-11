@@ -8,6 +8,7 @@
 body {
     /* your desired width */
     min-width: 400px;
+    height:200px;
     max-width: 100%;
     position: relative;
     vertical-align: middle;
@@ -16,11 +17,29 @@ body {
     color: #ffeac7;
 }
 
-.timeChoice{
+#timerPage{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    font-size: 400;
+}
+
+#reset{
+    display: flex;
+    align-self: center;
+    justify-self: start;
+}
+
+#timeChoice{
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
+    font-size: 400;
 }
+
+
+
 
 .span{
     padding-top: 10px;
@@ -48,7 +67,8 @@ body {
 }
 
 img{
-    width:50%;
+    max-width: 200px;;
+    min-width: none;
     height:auto;
     border-radius: 50%;
     padding: 15px;

@@ -6,23 +6,29 @@
 </head>
 <body>
     
-    <!--div timer - temps qui defile
-    <div class="horloge">
-        <span id="timer">00:00</span> 
+    
+
+    <button class="btn" id="reset">&lt;</button>
+    <div id="timerPage">
+        <div class="text">
+            <p>Temps avant la pause</p>
+        </div> 
+        <div class="timerIllus">
+            <img src="https://i.pinimg.com/564x/bf/77/4b/bf774ba7d9e8c5c00e95d49c189a80ed.jpg" alt="Time">
+        </div>
+        <h1 id="timer">00:00</h1> 
+        <br />
+        <button id="stop" class="btn">Stop</button>
         <br />
     </div>
--->
+
     
-    <!--Boutons start, stop et reset
-        <button onclick="stop()" class="btn">Stop</button>
-    <button onclick="reset()" class="btn">Reset</button>
-    <br />
--->
+
 
     
     <!--Choix du timer Ecran && timer Break + illustration-->
-    <div class="timeChoice">
-        <h1> Prenez un cafe ☕</h1>
+    <div id="timeChoice">
+        <h1> Prenez un cafe <span>☕</span></h1>
         <h2 class="span">Screen Minutes</h2>
         <div class="screenTime">
             <!--Regler le timer Ecran-->
@@ -41,7 +47,7 @@
            <h1 id="timeB"></h1> 
            <button id="upB" class="btn">&gt;</button> 
         </div>
-        <button onclick="start()" class="btn" id="startBtn">Start</button><br>
+        <button  class="btn" id="start">Start</button><br>
     </div>
     
     <!--Script du timer qui défile-->
