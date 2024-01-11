@@ -1,3 +1,8 @@
+function adjustBrightnessAtTimerStart() {
+    // Définir la luminosité à 0.8
+    document.body.style.filter = "brightness(0.5)";
+}
+
 //recuperer le timer 
 const timer = document.getElementById("timer");
 const timerPage = document.getElementById("timerPage");
@@ -16,21 +21,21 @@ const startBtn = document.getElementById("start")
 const start = () => {
 
 //Aappeler la fonction pour ajuster la luminosité au début du timer
-    adjustBrightnessAtTimerStart();
 
-    timeSeconds = parseInt(document.getElementById("timeS").innerHTML)*60;
-    breakSeconds = parseInt(document.getElementById("timeB").innerHTML)*60;
-
-    //Déclencher l'vènement "timerStart" au bon moment 
-    timerElement.dispatchEvent(new Event("timerStart"));
-    
+timeSeconds = parseInt(document.getElementById("timeS").innerHTML)*60;
+breakSeconds = parseInt(document.getElementById("timeB").innerHTML)*60;
+/*
+//Déclencher l'evènement "timerStart" au bon moment 
+timerElement.dispatchEvent(new Event("timerStart"));
+*/
 //toute les secondes, lance la fonction time et change l'interval
-    intervalX = setInterval(screenTime, 1000); 
+intervalX = setInterval(screenTime, 1000); 
 
-    timerPage.style.display = 'flex';
-    timeChoice.style.display = "none";
+timerPage.style.display = 'flex';
+timeChoice.style.display = "none";
 }
 startBtn.addEventListener("click", start)
+startBtn.addEventListener("click", adjustBrightnessAtTimerStart, 1000)
 
 
 //function qui arrête le timer

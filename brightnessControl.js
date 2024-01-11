@@ -1,9 +1,9 @@
-// Fonction pour ajuster la luminosité
+/*// Fonction pour ajuster la luminosité
 function adjustBrightnessAtTimerStart() {
     // Définir la luminosité à 0.8
     document.body.style.filter = "brightness(0.8)";
 }
-
+/*
 // Récupérer l'élément timer par son ID
 const timerElement = document.getElementById("timer");
 
@@ -13,3 +13,4 @@ timerElement.addEventListener("timerStart", () => {
     adjustBrightnessAtTimerStart();
 });
 
+*/
