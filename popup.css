@@ -6,8 +6,8 @@
 }
 
 body {
-    min-width: 400px;
     /* your desired width */
+    min-width: 400px;
     max-width: 100%;
     position: relative;
     vertical-align: middle;
