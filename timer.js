@@ -10,8 +10,16 @@ let intervalX;
 
 //fonction qui lance le timer
 const start = () => {
+
+//Aappeler la fonction pour ajuster la luminosité au début du timer
+    adjustBrightnessAtTimerStart();
+
     timeSeconds = parseInt(document.getElementById("timeS").innerHTML)*60;
     breakSeconds = parseInt(document.getElementById("timeB").innerHTML)*60;
+
+    //Déclencher l'vènement "timerStart" au bon moment 
+    timerElement.dispatchEvent(new Event("timerStart"));
+    
 //toute les secondes, lance la fonction time et change l'interval
     intervalX = setInterval(screenTime, 1000)
 }
