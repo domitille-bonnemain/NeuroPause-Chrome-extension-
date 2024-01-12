@@ -1,6 +1,8 @@
 // script de contenu
+const startBtn1 = document.getElementById("start")
 
-button.addEventListener("click", () => {
+startBtn1.addEventListener("click", () => {
+  console.log("start")
     chrome.runtime.sendMessage("", {
       type: "notification",
       options: {

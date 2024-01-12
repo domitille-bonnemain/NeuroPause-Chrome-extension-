@@ -18,7 +18,7 @@
       {
         "matches": ["http://*/*", "https://*/*"],
         "js": [
-          "js/app.js"
+          "app.js"
         ]
       }  
     ],
@@ -26,8 +26,8 @@
     "_comment3": "Page d'arrière plan",
 
     "background" : {
-      "scripts" : ["js/background.js"],
-      "persistent": false
+      "service_worker" : "background.js"
+      
     }
     
 }

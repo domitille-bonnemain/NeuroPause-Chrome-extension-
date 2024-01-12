@@ -14,7 +14,7 @@ let intervalX;
 const startBtn = document.getElementById("start")
 
 const start = () => {
-
+  
 //Aappeler la fonction pour ajuster la luminosité au début du timer
     adjustBrightnessAtTimerStart();
 
