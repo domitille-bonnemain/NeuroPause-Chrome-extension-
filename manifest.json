@@ -18,7 +18,7 @@
       {
         "matches": ["http://*/*", "https://*/*"],
         "js": [
-          "app.js"
+          "popup.js"
         ]
       }  
     ],

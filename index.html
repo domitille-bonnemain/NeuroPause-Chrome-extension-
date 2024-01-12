@@ -3,8 +3,12 @@
 <head>
     <title>Pause Extension</title>
     <link rel="stylesheet" href="popup.css">
+    <meta charset="UTF-8">
 </head>
 <body>
+    <h1 id="countdown">Loading...</h1>
+    <button id="pauseButton">Pause</button>
+    <button id="resumeButton">Resume</button>
     
     
 
@@ -50,13 +54,14 @@
     </div>
     
     <!--Script du timer qui défile-->
-    <script src="timer.js"></script>
+    <script src="timer.js"></script> 
     <!--Script des boutons pour choisir le temps des timers-->
     <script src="button.js"></script>
     <!--Script pour le mode Ne pas déranger-->
-    <script src="dnd.js"></script>
+    <!--<script src="dnd.js"></script>-->
     <script src="brightnessControl.js"></script>
     <!--Script pour remplacer la page (ajout Tijana)-->
-    <script src="app.js"></script>
+    <script src="popup.js"></script>
+    
 </body>
 </html>

@@ -22,7 +22,7 @@
     // Commence le timer dans Chrome
     const startTimer=(time)=>{
       if (time.getTime()> Date.now){
-        setInterval()
+        setInterval(()=> {},5000);
       }
     }
 
@@ -31,3 +31,15 @@
       chrome.runtime.sendMessage({cmd:"START_TIMER", when: time});
         startTimer(time)
     }
+
+    console.log(startTime)
+    chrome.runtime.sendMessage({cmd:"GIVE_TIME"}, response =>{
+      response= console.log("Hello")
+    });
+
+
+
+
+
+
+
