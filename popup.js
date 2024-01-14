@@ -79,7 +79,28 @@ function switchTheme(e) {
     }    
 }
 
-toggleSwitch.addEventListener('change', switchTheme, false);
+toggleSwitch.addEventListener('change', switchTheme, false);*/
+
+
+/* Essai dark mode */
+
+
+// Fonction qui envoie un message à l'arrière-plan pour activer le flou
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,56 +1,59 @@
 
-// Afficher une notification
-
-/*chrome.runtime.onMessage.addListener(data => {
-    if (data.type === "notification") {
-      //chrome.notifications.create("", data.options);
-     
-      //chrome.windows.getCurrent.data = null
-    }
-  });
-  */
-
-  // utiliser un eventlistener qui serait à l'écoute de $(document).ready si l'heure est dépassé
-
-  // Demander à Chrome l'heure et lance le timer
-  chrome.runtime.sendMessage({cmd: "GET_TIME"}, response => {
-      if (response.time){
-        const time = new Date(response.time);
-      startTimer(time)
-    }
-    })
-
-    // Commence le timer dans Chrome
-    const startTimer=(time)=>{
-      if (time.getTime()> Date.now){
-        setInterval(()=> {},5000);
-      }
-    }
-
-    //Envoie le message le Timer à commencé
-    const startTime=(time)=>{
-      chrome.runtime.sendMessage({cmd:"START_TIMER", when: time});
-        startTimer(time)
-    }
-
-    console.log(startTime)
-    chrome.runtime.sendMessage({cmd:"GIVE_TIME"}, response =>{
-      response= console.log("Hello")
-    });
-
-
-
-  /*Dark mode 
-  chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    if (request.darkMode) {
-      chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, { darkMode: true });
+// Écoute les messages envoyés par d'autres parties de l'extension
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+    // Récupère l'état actuel (activé ou désactivé) à partir du message
+    const isEnabled = message.toggleState;
+  
+    // Si l'extension est activée
+    if (isEnabled) {
+      // Récupère tous les onglets ouverts dans le navigateur
+      chrome.tabs.query({}, function (tabs) {
+        // Gère les erreurs s'il y en a
+        if (chrome.runtime.lastError) {
+          console.error(chrome.runtime.lastError);
+          return; // Gère l'erreur ici
+        }
+  
+        // Affiche les onglets dans la console (peut être utile pour le débogage)
+        console.log(tabs);
+  
+        // Pour chaque onglet, applique un flou à la page
+        tabs.forEach(tab => {
+          chrome.scripting.executeScript({
+            target: { tabId: tab.id },
+            function: function () {
+              // Applique un flou à la page
+              document.documentElement.style.filter = "blur(5px)";
+            }
+          });
+        });
+      });
+    } else {
+      // Si l'extension est désactivée
+      chrome.tabs.query({}, function (tabs) {
+        // Gère les erreurs s'il y en a
+        if (chrome.runtime.lastError) {
+          console.error(chrome.runtime.lastError);
+          return; // Gère l'erreur ici
+        }
+  
+        // Pour chaque onglet, supprime le flou de la page
+        tabs.forEach(tab => {
+          chrome.scripting.executeScript({
+            target: { tabId: tab.id },
+            function: function () {
+              // Supprime le flou de la page
+              document.documentElement.style.filter = "none";
+            }
+          });
+        });
       });
     }
   });
-
-    
-
-
-
-
+  
+  // Ajoute un écouteur pour les onglets nouvellement créés
+  chrome.tabs.onCreated.addListener(function (tab) {
+    // Affiche les informations sur le nouvel onglet dans la console
+    console.log(tab);
+  });
+  

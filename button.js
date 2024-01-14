@@ -50,3 +50,49 @@ const downB = () => {
     }
 }
 buttonDownB.addEventListener("click", downB)
+
+
+
+
+
+
+// Fonction déclenchée lorsque le bouton upS est cliqué
+document.getElementById('upS').addEventListener('click', function() {
+    // Obtenez la balise body
+    let body = document.body;
+
+    // Créez un élément div pour représenter le filtre foncé
+    let darkOverlay = document.createElement('div');
+    darkOverlay.style.position = 'fixed';
+    darkOverlay.style.top = '0';
+    darkOverlay.style.left = '0';
+    darkOverlay.style.width = '100%';
+    darkOverlay.style.height = '100%';
+    darkOverlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // 0.5 correspond à l'opacité du filtre foncé
+
+    // Ajoutez l'élément div à la page
+    body.appendChild(darkOverlay);
+
+    // Vous pouvez également ajouter d'autres styles à darkOverlay si nécessaire
+
+    // Pour supprimer le filtre foncé après un certain temps (par exemple, après 5 secondes)
+    setTimeout(() => {
+        body.removeChild(darkOverlay);
+    }, 5000);  // 5000 correspond à la durée en millisecondes avant de supprimer le filtre foncé
+});
+
+
+
+
+
+// Récupérer le bouton Start
+const startButton = document.getElementById("startBtn");
+
+// Ajouter un écouteur d'événements sur le bouton Start
+startButton.addEventListener("click", function () {
+  // Récupérer le corps de la page
+  const body = document.body;
+
+  // Appliquer le flou au corps de la page
+  body.style.filter = "blur(5px)";
+});
