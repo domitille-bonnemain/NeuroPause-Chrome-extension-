@@ -10,8 +10,14 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
       chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
         var activeTab = tabs[0];
 
-        // Exécute un script dans l'onglet actif pour ajuster la luminosité
-        chrome.tabs.executeScript(activeTab.id, { code: 'document.body.style.filter = "brightness(50%)"' });
+        // Exécute la fonction dans le contexte de la page
+        chrome.scripting.executeScript({
+          target: { tabId: activeTab.id },
+          function: function() {
+            // Appele votre fonction pour ajuster la luminosité
+            adjustBrightnessAtTimerStart();
+          }
+        });
 
         // Marque le timer comme démarré
         timerStarted = true;
@@ -19,3 +25,4 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     }
   }
 });
+
