@@ -1,28 +1,54 @@
-// Variable pour stocker l'état du timer
-let timerStarted = false;
 
-// Écoute les messages provenant de la popup
-chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-  if (message.action === "startTimer") {
-    // Vérifie si le timer est déjà démarré
-    if (!timerStarted) {
-      // Récupére l'onglet actif
-      chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-        var activeTab = tabs[0];
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  const isEnabled = message.toggleState;
+  if (isEnabled) {
+    chrome.tabs.query({}, function (tabs) {
+      if (chrome.runtime.lastError) {
+        console.error(chrome.runtime.lastError);
+        return; // Handle the error here
+      }
 
-        // Exécute la fonction dans le contexte de la page
+      console.log(tabs);
+      tabs.forEach(tab => {
         chrome.scripting.executeScript({
-          target: { tabId: activeTab.id },
-          function: function() {
-            // Appele votre fonction pour ajuster la luminosité
-            adjustBrightnessAtTimerStart();
+          target: { tabId: tab.id },
+          function: function () {
+            document.documentElement.style.filter = "brightness(0.4)";
           }
         });
-
-        // Marque le timer comme démarré
-        timerStarted = true;
       });
-    }
+    }); 
+  } else {
+    chrome.tabs.query({ }, function (tabs) {
+      if (chrome.runtime.lastError) {
+        console.error(chrome.runtime.lastError);
+        return; // Handle the error here
+      }
+
+      tabs.forEach(tab => {
+        chrome.scripting.executeScript({
+          target: { tabId: tab.id },
+          function: function () {
+            document.documentElement.style.filter = "none";
+          }
+        });
+      });
+    });
   }
 });
+
+
+chrome.tabs.onCreated.addListener(function (tab) {
+  console.log(tab);
+});
+
+
+
+
+
+
+
+
+
+
 

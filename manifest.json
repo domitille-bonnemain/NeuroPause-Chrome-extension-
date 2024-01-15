@@ -5,6 +5,7 @@
   "version": "1.0",
   "authors": ["Domitille Bonnemain", "Zoé Lecaille", "Tijana Laporte Mitrovic"],
   
+  
   "action": {
     "default_popup": "index.html"
   },
@@ -14,6 +15,11 @@
   },
 
   "permissions": ["storage", "declarativeContent", "activeTab", "scripting", "tabs"],
+
+  "host_permissions": [
+    "*://*/*"
+  ],
+  
 
   "content_scripts": [
     {

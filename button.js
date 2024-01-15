@@ -86,7 +86,7 @@ document.getElementById('upS').addEventListener('click', function() {
 
 
 // Récupérer le bouton Start
-const startButton = document.getElementById("startBtn");
+const startButton = document.getElementById("start");
 
 // Ajouter un écouteur d'événements sur le bouton Start
 startButton.addEventListener("click", function () {
@@ -94,5 +94,5 @@ startButton.addEventListener("click", function () {
   const body = document.body;
 
   // Appliquer le flou au corps de la page
-  body.style.filter = "blur(5px)";
+  //body.style.filter = "blur(5px)";
 });
