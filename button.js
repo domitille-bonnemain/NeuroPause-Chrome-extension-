@@ -94,5 +94,5 @@ startButton.addEventListener("click", function () {
   const body = document.body;
 
   // Appliquer le flou au corps de la page
-  //body.style.filter = "blur(5px)";
+  body.style.filter = "brightness(0.4)";
 });
