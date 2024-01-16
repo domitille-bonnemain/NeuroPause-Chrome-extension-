@@ -13,7 +13,7 @@ NeuroPause est une extension de navigateur conçue pour faciliter les pauses éc
 
 - **Alertes minimales :** Pour minimiser le stress pour les personnes atteintes du syndrome d'Asperger, seul un message d'alerte est affiché ("Ok for a breack?" s'affichant à la fin du timer du temps avant la pause). Cette approche aide à éviter les frustrations potentielles pouvant découler de notifications excessives.
 
-- **Popup qui avec temps d'écran personnalisé :** Les utilisateurs peuvent cliquent sur le temps avant la pause et le minuteur se lance puis l'onglet actif se floute et chaque onglet est flouté.Quand l'utilisateur concidère que sa pause est terminée il suffit de raffraichir un onglet et chaque onglet actifs ne sera plus floutés. 
+- **Popup qui avec temps d'écran personnalisé :** Les utilisateurs peuvent cliquent sur le temps avant la pause et le minuteur se lance puis l'onglet actif se floute et chaque onglet est flouté.Quand l'utilisateur concidère que sa pause est terminée il suffit de raffraichir un onglet et chaque onglet actifs ne sera plus floutés. L'utilisateur peut cliquer sur "N" et faire un clique droit une fois l'extension lancé puis cliquer sur "Options" pour choisir son temps d'écran s'il souhaite le modifier.
 
 - **Luminosité adaptative :** Une fois le timer lancé, la luminosité de l'écran diminue ou l’écran se floute, signalant à l'utilisateur de faire une pause.
 
