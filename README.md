@@ -1,5 +1,5 @@
 
-# Extension NeuroPause (Blur effect) 🧠
+# Extension NeuroPause (Blur effect)
 
 ## Présentation
  ![Extension](images/NeuroPause.png)   ![Blur](images/Blur.png)
