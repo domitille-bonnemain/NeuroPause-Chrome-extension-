@@ -7,14 +7,22 @@
   
   
   "action": {
-    "default_popup": "index.html"
+    "default_popup": "popup/popup.html"
   },
 
   "background": {
     "service_worker": "background.js"
   },
 
-  "permissions": ["storage", "declarativeContent", "activeTab", "scripting", "tabs"],
+  "permissions": [
+    "storage", 
+    "declarativeContent", 
+    "activeTab", 
+    "scripting", 
+    "tabs",
+    "alarms",
+    "notifications"
+],
 
   "host_permissions": [
     "*://*/*"
@@ -33,5 +41,6 @@
       "resources": ["popup.css"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "options_page": "timeData/timer.html"
 }
