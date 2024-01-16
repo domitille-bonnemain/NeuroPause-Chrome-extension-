@@ -3,8 +3,6 @@
   "name": "DTZ",
   "description": "Screen time break extension for autistic people",
   "version": "1.0",
-  "authors": ["Domitille Bonnemain", "Zoé Lecaille", "Tijana Laporte Mitrovic"],
-  
   
   "action": {
     "default_popup": "popup/popup.html"
