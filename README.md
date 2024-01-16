@@ -1,8 +1,8 @@
 
-# Extension NeuroPause 🧠
+# Extension NeuroPause (Blur effect)
 
 ## Présentation
-![Extension](images/NeuroPause.png)  ![Blur](images/Blur.png)
+ ![Extension](images/NeuroPause.png)   ![Blur](images/Blur.png)
 
 
 NeuroPause est une extension de navigateur conçue pour faciliter les pauses écrans, avec une attention particulière à l'adaptation aux personnes atteintes du syndrome d'Asperger. L'extension propose une fenêtre contextuelle conviviale de taille moyenne, affichant des couleurs douces et apaisantes. Ce design a été élaboré en collaboration avec un infirmier spécialisé dans la prise en charge des personnes atteintes du syndrome d'Asperger, garantissant un environnement qui prend en compte les sensibilités sensorielles.
@@ -39,7 +39,12 @@ L'extension minimise la quantité de texte et de variations de couleur, prenant 
 
 Nous accueillons les contributions et les retours de la communauté pour améliorer l'utilisabilité et l'efficacité de NeuroPause. N'hésitez pas à ouvrir des problèmes, fournir des suggestions ou contribuer au projet.
 
-**Adapté et développé avec minutie par des étudiantes en développement logiciel [Tijana Laporte Mitrovic, Zoé Lecaille, Domitille Bonnemain]**
+**Adapté et développé avec minutie par des étudiantes en développement logiciel par : 
 
-[Inclure nos liens ici vers nos profils sociaux pour les retours et les contributions       ]
+[Tijana Laporte Mitrovic] (https://www.linkedin.com/in/tijana-laporte-mitrovic-b13859152/)
+
+[Zoé Lecaille] (https://www.linkedin.com/in/zoe-lecaille/)
+
+[Domitille Bonnemain] (https://www.linkedin.com/in/domitille-bonnemain/) **
+
 
