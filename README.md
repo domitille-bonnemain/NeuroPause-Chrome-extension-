@@ -39,7 +39,6 @@ L'extension minimise la quantité de texte et de variations de couleur, prenant 
 
 Nous accueillons les contributions et les retours de la communauté pour améliorer l'utilisabilité et l'efficacité de NeuroPause. N'hésitez pas à ouvrir des problèmes, fournir des suggestions ou contribuer au projet.
 
-**Adapté et développé avec minutie par des étudiantes en développement logiciel [Tijana Laporte Mitrovic, Zoé Lecaille, Domitille Bonnemain]**
+**Adapté et développé avec minutie par des étudiantes en développement logiciel [Tijana Laporte Mitrovic] (https://www.linkedin.com/in/tijana-laporte-mitrovic-b13859152/), [Zoé Lecaille](https://www.linkedin.com/in/zoe-lecaille/), [Domitille Bonnemain] (https://www.linkedin.com/in/domitille-bonnemain/) **
 
-[Inclure nos liens ici vers nos profils sociaux pour les retours et les contributions       ]
 
