@@ -2,7 +2,7 @@
 # Extension NeuroPause 🧠
 
 ## Présentation
-Popup: ![Extension](images/NeuroPause.png)  Résultat:   ![Blur](images/Blur.png)
+ ![Extension](images/NeuroPause.png)   ![Blur](images/Blur.png)
 
 
 NeuroPause est une extension de navigateur conçue pour faciliter les pauses écrans, avec une attention particulière à l'adaptation aux personnes atteintes du syndrome d'Asperger. L'extension propose une fenêtre contextuelle conviviale de taille moyenne, affichant des couleurs douces et apaisantes. Ce design a été élaboré en collaboration avec un infirmier spécialisé dans la prise en charge des personnes atteintes du syndrome d'Asperger, garantissant un environnement qui prend en compte les sensibilités sensorielles.
