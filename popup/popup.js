@@ -1,15 +1,10 @@
 function updateTime() {
     //récupère les données entrées
-      chrome.storage.local.get(["timer", "timeScreen","timeBreak"], (res) => {
+      chrome.storage.local.get(["timer", "timeScreen"], (res) => {
         //compte à rebours
         const time = document.getElementById("time");
         //temps écran
         const minuteS = `${res.timeScreen - Math.ceil(res.timer / 60)}`.padStart(
-          2,
-          "0"
-        );
-        //temps pause
-        const minuteB = `${res.timeBreak - Math.ceil(res.timer / 60)}`.padStart(
           2,
           "0"
         );
@@ -20,12 +15,8 @@ function updateTime() {
         }
         
   //console.error("choix du text-content joue sur le message")
-  
-        //countdown temps avant la reprise d'écran
-        time.textContent = `${minuteB}:${seconds}`;
         //Countdown temps avant la pause 
         time.textContent = `${minuteS}:${seconds}`;
-  
       });
     }
     

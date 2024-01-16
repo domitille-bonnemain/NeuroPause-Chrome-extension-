@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
         chrome.scripting.executeScript({
           target: { tabId: tab.id },
           function: function () {
-            document.documentElement.style.filter = "brightness(0.4)";
+            document.documentElement.style.filter = "blur(5px)";
           }
         });
       });

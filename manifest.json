@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "DTZ",
+  "name": "NeuroPause",
   "description": "Screen time break extension for autistic people",
   "version": "1.0",
   
@@ -36,7 +36,7 @@
 
   "web_accessible_resources": [
     {
-      "resources": ["popup.css"],
+      "resources": ["popup/popup.css"],
       "matches": ["<all_urls>"]
     }
   ],
