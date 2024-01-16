@@ -23,7 +23,7 @@ chrome.alarms.create("NeuroPause", {
               chrome.notifications.create("ScreenTimer", {
                 type: "basic",
                 title: "ScreenTimer",
-                message: `take a break !`,
+                message: `Ok for a break?`,
                 iconUrl: "icon.png",
               });
 
