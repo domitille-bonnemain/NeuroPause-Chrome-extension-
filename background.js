@@ -24,7 +24,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
                         type: "basic",
                         title: "ScreenTimer",
                         message: `Ok for a break?`,
-                        iconUrl: "icon.png",
+                        iconUrl: "images/brain-32.png",
                     });
 
                     ///lancer le blur
