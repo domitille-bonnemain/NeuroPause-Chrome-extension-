@@ -13,7 +13,7 @@ NeuroPause est une extension de navigateur conçue pour faciliter les pauses éc
 
 - **Fenêtre contextuelle (POPUP)  adaptée à l'Asperger :** La fenêtre contextuelle est conçue dans un souci de simplicité, présentant des couleurs douces et apaisantes pour offrir une expérience utilisateur confortable.
 
-- **Alertes minimales :** Pour minimiser le stress pour les personnes atteintes du syndrome d'Asperger, seul un message d'alerte est affiché ( indiquant le temps restant avant de pouvoir cliquer sur “start” et de voir l’écran se flouter. Cette approche aide à éviter les frustrations potentielles pouvant découler de notifications excessives.
+- **Alertes minimales :** Pour minimiser le stress pour les personnes atteintes du syndrome d'Asperger, seul un message d'alerte est affiché ("Ok for a breack?" s'affichant à la fin du timer du temps avant la pause). Cette approche aide à éviter les frustrations potentielles pouvant découler de notifications excessives.
 
 - **Popup qui affiche le temps avant la pause :** Les utilisateurs peuvent cliquent sur le temps avant la pause et le minuteur se lance puis l'onglet actif se floute et chaque onglet est flouté.Quand l'utilisateur concidère que sa pause est terminée il suffit de raffraichir un onglet et chaque onglet actifs ne sera plus floutés. 
 
