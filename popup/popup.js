@@ -11,7 +11,7 @@ button.addEventListener("click", function () {
   
 const isEnabled = button.toggle;
   chrome.storage.sync.set({ isEnabled: isEnabled }, function () {
-    // Send a message to the background script to apply or remove the blur effect
+    // Send a message to the background script to apply 
     chrome.runtime.sendMessage({toggleState: isEnabled});
   });
 });
@@ -22,7 +22,7 @@ buttonS.addEventListener("click", function () {
   
   const isEnabled = button.toggle;
     chrome.storage.sync.set({ isEnabled: isEnabled }, function () {
-      // Send a message to the background script to apply or remove the blur effect
+      // Send a message to the background script to remove the blur effect
       chrome.runtime.sendMessage({toggleState: !isEnabled});
     });
   });
