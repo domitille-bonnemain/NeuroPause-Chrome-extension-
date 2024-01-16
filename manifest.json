@@ -3,9 +3,20 @@
   "name": "NeuroPause",
   "description": "Screen time break extension for autistic people",
   "version": "1.0",
-  
+  "icons": {
+    "16": "images/brain-16.png",
+    "32": "images/brain-32.png",
+    "48": "images/brain-48.png",
+    "128": "images/brain-128.png"
+  },
   "action": {
-    "default_popup": "popup/popup.html"
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "images/brain-16.png",
+    "32": "images/brain-32.png",
+    "48": "images/brain-48.png",
+    "128": "images/brain-128.png"
+    }
   },
 
   "background": {
