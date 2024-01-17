@@ -20,9 +20,9 @@ NeuroPause est une extension de navigateur conçue pour faciliter les pauses éc
 Pour utiliser NeuroPause, suivez ces étapes :
 
 1. Installez l'extension dans votre navigateur Chrome.
-2. Le message d'alerte apparaît après trois heures d'utilisation continue de l'écran.
-3. Remplissez la durée de pause souhaitée dans la fenêtre contextuelle.
-4. La minuterie de pause démarre, et l'écran s'adapte pour encourager une pause.
+2. La popup saffiche vous pouvez cliquer sur "start" si le temps indiqué vous convient ou aller en haut à droite sur le "N", choisir "Options" et definir un autre temps de temps d'écran.
+3. Remplissez la durée de temps d'écran souhaitée dans la fenêtre contextuelle.
+4. La minuterie de pause démarre, et l'écran s'adapte pour encourager une pause (flou).
 
 ## Contexte du Projet
 
