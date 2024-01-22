@@ -1,4 +1,4 @@
-
+© 2024 
 # Extension NeuroPause (Blur effect)
 
 ## Présentation
